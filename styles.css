@@ -1,0 +1,215 @@
+/* Reset and base styles */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+main {
+  flex: 1; /* Pushes footer to bottom */
+}
+
+/* Header */
+header {
+  background: #f4f4f4;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 a {
+  color: #007bff;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 1.3em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+/* Hero (Landing Page) */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+
+.cta-button:hover {
+  background: #0056b3;
+}
+
+/* Latest Tools (Landing Page) */
+.latest-tools {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.latest-tools h3 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+/* All Tools (/tools Page) */
+.tools-list {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.tools-list h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.tools-list p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+/* Shared Tool Grid and Card Styles */
+.tool-grid {
+  display: grid;
+  gap: 20px;
+}
+
+/* Landing Page Tool Grid (Full-width) */
+.latest-tools .tool-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* /tools Page Tool Grid (Fixed-width Cards) */
+.tools-list .tool-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  justify-content: center;
+}
+
+/* Tool Card (Shared Base Styles) */
+.tool-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.tool-card h4 {
+  margin: 0 0 8px;
+  font-size: 1.2em;
+}
+
+.tool-card p {
+  margin: 0 0 10px;
+  font-size: 0.95em;
+  color: #666;
+}
+
+.tool-card a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.tool-card a:hover {
+  text-decoration: underline;
+}
+
+/* Landing Page Tool Card (Full-width Variant) */
+.latest-tools .tool-card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* /tools Page Tool Card (Simpler Card Variant) */
+.tools-list .tool-card {
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+/* About (Landing Page) */
+.about {
+  background: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+  margin-top: auto;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
