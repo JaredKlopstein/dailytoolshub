@@ -7,14 +7,6 @@
     <meta name="description" content="Make decisions fast with our free Random Decision Maker. Enter your options and get a random choice instantly!">
     <link rel="stylesheet" href="/styles.css"> <!-- Reuse root CSS -->
     <link rel="stylesheet" href="styles.css"> <!-- Tool-specific CSS -->
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXX');
-    </script>
 </head>
 <body>
     <header>
@@ -32,7 +24,7 @@
             <h2>Random Decision Maker</h2>
             <p>Can’t decide? Enter your options below (separated by commas) and let us pick for you!</p>
             <textarea id="options" placeholder="e.g., Pizza, Sushi, Tacos"></textarea>
-            <button id="generate" onclick="gtag('event', 'click', {'event_category': 'Tool', 'event_label': 'Generate Decision'});">Pick One!</button>
+            <button id="generate">Pick One!</button>
             <div id="result"></div>
         </section>
     </main>

@@ -8,14 +8,6 @@
     <meta name="keywords" content="free word counter online, word count tool, character counter">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="styles.css">
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXX');
-    </script>
 </head>
 <body>
     <header>
@@ -38,7 +30,7 @@
             <h2>Word Counter</h2>
             <p>Paste or type your text below to count words and characters instantly.</p>
             <textarea id="input-text" placeholder="Type or paste your text here..."></textarea>
-            <button id="count" onclick="gtag('event', 'click', {'event_category': 'Tool', 'event_label': 'Count Words'});">Count It!</button>
+            <button id="count">Count It!</button>
             <div id="results">
                 <p>Words: <span id="word-count">0</span></p>
                 <p>Characters (with spaces): <span id="char-count-with-spaces">0</span></p>
