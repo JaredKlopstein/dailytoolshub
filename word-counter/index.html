@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter - Daily Tools Hub</title>
+    <meta name="description" content="Count words and characters instantly with our free Word Counter tool at Daily Tools Hub. Simple and fast!">
+    <meta name="keywords" content="free word counter online, word count tool, character counter">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXX');
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">
+                <a href="/">
+                    <span class="logo-daily">Daily</span>
+                    <span class="logo-tools">Tools Hub</span>
+                </a>
+            </h1>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/tools">All Tools</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="tool">
+            <h2>Word Counter</h2>
+            <p>Paste or type your text below to count words and characters instantly.</p>
+            <textarea id="input-text" placeholder="Type or paste your text here..."></textarea>
+            <button id="count" onclick="gtag('event', 'click', {'event_category': 'Tool', 'event_label': 'Count Words'});">Count It!</button>
+            <div id="results">
+                <p>Words: <span id="word-count">0</span></p>
+                <p>Characters (with spaces): <span id="char-count-with-spaces">0</span></p>
+                <p>Characters (no spaces): <span id="char-count-no-spaces">0</span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Daily Tools Hub | <a href="/about">About</a> | <a href="https://twitter.com/yourhandle" target="_blank">Follow on X</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
