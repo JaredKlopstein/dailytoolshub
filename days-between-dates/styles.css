@@ -1,0 +1,59 @@
+.tool {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+input[type="date"] {
+    width: 100%;
+    max-width: 200px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+#result p {
+    margin: 5px 0;
+}
+
+#result .total-days {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#result .date-range {
+    font-style: italic;
+    color: #666;
+}
