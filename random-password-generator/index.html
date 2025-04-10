@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator - Daily Tools Hub</title>
+    <meta name="description" content="Generate secure random passwords with our free tool at Daily Tools Hub. Customize length and characters!">
+    <meta name="keywords" content="random password generator, secure password tool">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="/dailytoolshub/">Daily Tools Hub</a></h1>
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+            <ul>
+                <li><a href="/dailytoolshub/">Home</a></li>
+                <li><a href="/dailytoolshub/tools">All Tools</a></li>
+                <li><a href="/dailytoolshub/about">About</a></li>
+                <li><a href="/dailytoolshub/feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="tool">
+            <h2>Random Password Generator</h2>
+            <p>Create a secure password with your preferred options.</p>
+            <div class="options">
+                <label for="length">Password Length (6-20):</label>
+                <input type="number" id="length" min="6" max="20" value="12">
+                
+                <label><input type="checkbox" id="uppercase" checked> Uppercase (A-Z)</label>
+                <label><input type="checkbox" id="lowercase" checked> Lowercase (a-z)</label>
+                <label><input type="checkbox" id="numbers" checked> Numbers (0-9)</label>
+                <label><input type="checkbox" id="symbols" checked> Symbols (!@#$%)</label>
+            </div>
+            <button id="generate">Generate Password</button>
+            <div id="result">
+                <p>Your Password: <span id="password">Click Generate</span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Daily Tools Hub | <a href="/dailytoolshub/about">About</a> | <a href="https://twitter.com/yourhandle" target="_blank">Follow on X</a></p>
+    </footer>
+    <script src="/script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
