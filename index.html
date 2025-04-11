@@ -1,85 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daily Tools Hub - Free Online Tools Updated Daily</title>
-    <meta
-      name="description"
-      content="Discover free online tools updated daily at Daily Tools Hub. Calculators, generators, and more—new tools every day!"
-    />
-    <meta
-      name="keywords"
-      content="free online tools, daily tools, random decision maker, useful utilities"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <h1><a href="/">Daily Tools Hub</a></h1>
-        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/tools">All Tools</a></li>
-            <li><a href="/about">About</a></li>
-        </ul>
-    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Tools Hub - Your Everyday Utility Toolkit</title>
+    <meta name="description" content="Daily Tools Hub offers free, simple tools to solve everyday problems. New tools added regularly!">
+    <meta name="keywords" content="daily tools hub, free online tools, utility tools">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Modern Header -->
+    <header class="fixed w-full bg-white/80 backdrop-blur-sm border-b z-50">
+        <div class="max-w-7xl mx-auto">
+            <nav class="flex items-center justify-between px-6 py-4">
+                <a href="/dailytoolshub/" class="flex items-center gap-2">
+                    <span class="font font-bold text-xl">DailyToolsHub 🛠️</span>
+                </a>
+                <div class="flex items-center gap-4">
+                    <button class="nav-toggle lg:hidden text-2xl" aria-label="Toggle navigation">☰</button>
+                    <div class="hidden lg:flex items-center gap-4">
+                        <a href="/dailytoolshub/tools" class="text-gray-600 hover:text-purple-600 transition-all duration-200">All Tools</a>
+                        <a href="/dailytoolshub/about" class="text-gray-600 hover:text-purple-600 transition-all duration-200">About</a>
+                        <a href="/dailytoolshub/feedback" class="text-gray-600 hover:text-purple-600 transition-all duration-200">Feedback</a>
+                        <a href="/dailytoolshub/tools" class="px-6 py-3 bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-full hover:from-purple-700 hover:to-purple-800 transition-all duration-200 shadow-sm hover:shadow-md">Explore Tools</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- Mobile Menu (Hidden by Default) -->
+            <div class="nav-menu hidden flex-col gap-4 px-6 py-4 bg-white border-t lg:hidden">
+                <a href="/dailytoolshub/tools" class="text-gray-600 hover:text-purple-600 transition-all duration-200">All Tools</a>
+                <a href="/dailytoolshub/about" class="text-gray-600 hover:text-purple-600 transition-all duration-200">About</a>
+                <a href="/dailytoolshub/feedback" class="text-gray-600 hover:text-purple-600 transition-all duration-200">Feedback</a>
+                <a href="/dailytoolshub/tools" class="px-6 py-3 bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-full hover:from-purple-700 hover:to-purple-800 transition-all duration-200 shadow-sm hover:shadow-md inline-block">Explore Tools</a>
+            </div>
+        </div>
     </header>
-    <main>
-      <section class="hero">
-        <h2>Free Tools, Fresh Daily</h2>
-        <p>
-          Explore a growing collection of simple, useful tools—updated every
-          day. From calculators to generators, we’ve got you covered.
-        </p>
-        <a href="/tools" class="cta-button">Explore Tools Now</a>
-      </section>
-      <section class="latest-tools">
-        <h3>Latest Tools</h3>
-        <div class="tool-grid">
-          <div class="tool-card">
-            <h4>Random Decision Maker</h4>
-            <p>
-              Struggling to choose? Enter your options and get a random pick
-              instantly.
-            </p>
-            <a href="/random-decision-maker/">Try It</a>
-          </div>
-          <div class="tool-card">
-            <h4>Word Counter</h4>
-            <p>Count words and characters in your text instantly.</p>
-            <a href="/word-counter/">Try It</a>
-          </div>
-          <div class="tool-card">
-            <h4>Days Between Dates</h4>
-            <p>Calculate the number of days between two dates.</p>
-            <a href="/days-between-dates/">Try It</a>
-        </div>
-        <div class="tool-card">
-          <h4>Random Password Generator</h4>
-          <p>Generate a secure password with custom options.</p>
-          <a href="/random-password-generator">Try It</a>
-      </div>
-        </div>
-      </section>
-      <section class="about">
-        <h3>Why Daily Tools Hub?</h3>
-        <p>
-          We’re on a mission to build a new, free tool every day. Whether you
-          need a quick calculator or a creative generator, check back daily for
-          something new!
-        </p>
-      </section>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-b from-purple-50/50">
+            <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8">
+                    Your Everyday
+                    <span class="block bg-gradient-to-r from-purple-600 to-purple-800 text-transparent bg-clip-text">Tools Hub</span>
+                </h1>
+                <p class="max-w-2xl mx-auto text-xl text-gray-600 mb-12">
+                    Daily Tools Hub provides free, simple utilities to tackle everyday tasks. Discover new tools added regularly!
+                </p>
+                <div class="flex justify-center gap-4">
+                    <a href="/dailytoolshub/tools" class="px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-700 text-white text-lg rounded-full hover:from-purple-700 hover:to-purple-800 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-1">Get Started</a>
+                    <a href="#tools" class="px-8 py-4 bg-white border border-purple-600 text-purple-600 text-lg rounded-full hover:bg-purple-50 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-1">Explore Tools</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools Section -->
+        <section id="tools" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                    Discover Our
+                    <span class="bg-gradient-to-r from-purple-600 to-purple-800 text-transparent bg-clip-text">Latest Tools</span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-2xl shadow-xl border transition-all duration-300 hover:shadow-lg">
+                        <div class="text-4xl mb-4">🎲</div>
+                        <h3 class="text-xl font-bold mb-3">Random Decision Maker</h3>
+                        <p class="text-gray-600">Struggling to choose? Enter options and get a random pick instantly.</p>
+                        <a href="/dailytoolshub/random-decision-maker" class="mt-4 inline-block text-purple-600 hover:underline">Try It</a>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-2xl shadow-xl border transition-all duration-300 hover:shadow-lg">
+                        <div class="text-4xl mb-4">📝</div>
+                        <h3 class="text-xl font-bold mb-3">Word Counter</h3>
+                        <p class="text-gray-600">Count words and characters in your text instantly.</p>
+                        <a href="/dailytoolshub/word-counter" class="mt-4 inline-block text-purple-600 hover:underline">Try It</a>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-2xl shadow-xl border transition-all duration-300 hover:shadow-lg">
+                        <div class="text-4xl mb-4">📅</div>
+                        <h3 class="text-xl font-bold mb-3">Days Between Dates</h3>
+                        <p class="text-gray-600">Calculate the number of days between two dates.</p>
+                        <a href="/dailytoolshub/days-between-dates" class="mt-4 inline-block text-purple-600 hover:underline">Try It</a>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-2xl shadow-xl border transition-all duration-300 hover:shadow-lg">
+                        <div class="text-4xl mb-4">🔒</div>
+                        <h3 class="text-xl font-bold mb-3">Random Password Generator</h3>
+                        <p class="text-gray-600">Generate a secure password with custom options.</p>
+                        <a href="/dailytoolshub/random-password-generator" class="mt-4 inline-block text-purple-600 hover:underline">Try It</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gradient-to-b from-purple-50/50">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">
+                    About
+                    <span class="bg-gradient-to-r from-purple-600 to-purple-800 text-transparent bg-clip-text">Daily Tools Hub</span>
+                </h2>
+                <p class="max-w-2xl mx-auto text-xl text-gray-600">
+                    Daily Tools Hub is a passion project to build and share free tools that make life easier. New tools are added regularly—suggest yours via our feedback page!
+                </p>
+            </div>
+        </section>
     </main>
-    <footer>
-      <p>
-        © 2025 Daily Tools Hub | <a href="/about">About</a> |
-        <a href="https://twitter.com/jaredklopstein" target="_blank"
-          >Follow on X</a
-        >
-      </p>
+
+    <footer class="bg-gray-50 py-8">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-gray-600 mb-4">© 2025 Daily Tools Hub. All rights reserved.</p>
+            <div class="flex justify-center gap-4">
+                <a href="/dailytoolshub/about" class="text-gray-600 hover:text-purple-600">About</a>
+                <a href="/dailytoolshub/feedback" class="text-gray-600 hover:text-purple-600">Feedback</a>
+                <a href="https://twitter.com/yourhandle" class="text-gray-600 hover:text-purple-600">Twitter</a>
+            </div>
+        </div>
     </footer>
+
     <script src="/script.js"></script>
-  </body>
+</body>
 </html>
